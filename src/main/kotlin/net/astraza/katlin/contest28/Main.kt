@@ -1,3 +1,7 @@
 package net.astraza.katlin.contest28
 
-// FUTURE MAIN AS SOON AS CORE GETS HOSTED
+import net.astraza.katlin.plugin.KatlinPlugin
+
+class Main : KatlinPlugin() {
+	override fun enable() = Unit
+}

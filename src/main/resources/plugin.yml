@@ -1,0 +1,6 @@
+name: Contest28 # Change as soon as we have a proper name
+authors: [Sxtanna, MrMidnight, Proximyst]
+main: net.astraza.katlin.contest28.Main
+version: 1.0
+depends: [Katlin]
+website: https://github.com/TeamKatlin

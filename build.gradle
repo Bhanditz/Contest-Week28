@@ -6,11 +6,11 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.github.jengelman.gradle.plugins:shadow:2.0.0"
+        classpath "com.github.jengelman.gradle.plugins:shadow:1.2.4"
     }
 }
 plugins {
-    id "com.github.johnrengelman.shadow" version "2.0.0"
+    id "com.github.johnrengelman.shadow" version "1.2.4"
 }
 group 'net.astraza.katlin'
 version '1.0-SNAPSHOT'
@@ -25,12 +25,16 @@ repositories {
     maven {
         url "https://oss.sonatype.org/content/repositories/snapshots"
     }
+    maven {
+        url 'http://two.proximyst.com:5000/artifactory/katlin-mvn'
+    }
 }
 
 dependencies {
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jre8"
     compileOnly "org.jetbrains.kotlin:kotlin-reflect"
     compileOnly 'org.spigotmc:spigot-api:1.12-R0.1-SNAPSHOT'
+    compileOnly 'net.astraza.katlin:Core:1.0'
 }
 
 compileKotlin {
